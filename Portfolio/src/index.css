@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .container {
+    @apply mx-[auto];
+  }
+  .element-center {
+    @apply justify-center flex items-center;
+  }
+  .btn {
+    @apply font-mono bg-[#141429] hover:bg-[#1414296c] rounded-2xl text-[#afafaf] hover:text-[#ffffff] shadow-blue-500/50 items-center   hover:border-[#6a2f7d] hover:border-2 transition-all duration-150  !important;
+  }
+  .gradient-background {
+    background: radial-gradient(ellipse at top left, #221440, #38154a, #4c0d2e);
+  }
+}
+
+body {
+  background: linear-gradient(135deg, rgb(38, 38, 70), rgb(33, 14, 44));
+}
+
+@keyframes wave {
+  0% {
+    background-position: -100%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.wave-text {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #58265c, #856f94, #6a2e6e);
+  background-size: 200% 100%;
+  background-position: -100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: wave 7s ease-in-out infinite;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #6e6e6e;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #6d287a;
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #350e3d;
+}
